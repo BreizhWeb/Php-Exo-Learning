@@ -1,0 +1,75 @@
+<!DOCTYPE HTML> 
+<html lang="fr">
+<head>
+	<title>page de saisie</title>
+	<!-- encodage du document en iso-8859-1 ou UTF-8 Voir format dans la barre d'outils-->
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<!-- exécution du script traitement.php après clic sur le bouton Calculer-->
+	<form action = "traitement.php" method = "post">
+	<center>
+	<table>
+		<tr>
+		<h2>Envoie d'un message</h2>
+		</tr>
+		<tr>
+			<td>Civilité :    </td>
+			<td>
+			<select>
+			<option value=1>Monsieur</option>
+			<option value=2>Madame</option>
+			</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Nom et prénom :    </td>
+			<td>
+			<input type="text" name="nom" placeholder="Votre nom et prénom">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Adresse mail  :    </td>
+			<td>
+			<input type="email" name="mail">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Téléphone     :    </td>
+			<td>
+			<input type="text" name="telephone" placeholder="01 02 03 04 05">
+		</tr>
+		
+		<tr>
+			<td>Objet         :    </td>
+			<td>
+			<select>
+			<option value=3>Demande de rdv</option>
+			</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Message       :    </td>
+			<td>
+			<textarea rows="4" cols="30" name="commentaire" placeholder="Votre message"></textarea> 
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+			<input type="submit" value="Valider">
+			</td>
+			<td>
+			<input type="reset" value="Annuler">
+			</td>
+		</tr>
+    </table>
+	</center>
+	</form>
+</body>
+</html>

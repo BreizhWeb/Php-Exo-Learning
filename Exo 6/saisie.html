@@ -1,0 +1,23 @@
+<!DOCTYPE HTML> 
+<html lang="fr">
+<head>
+	<title>page de saisie</title>
+	<!-- encodage du document en iso-8859-1 ou UTF-8 Voir format dans la barre d'outils-->
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<!-- exécution du script traitement.php après clic sur le bouton Calculer-->
+	<form action = "traitement.php" method = "post">
+	<center>
+	<h2>Formulaire d'authentification</h2>
+		<fieldset>
+		<legend>Valeur à saisir :</legend>
+		Votre identifiant: <input type="mail" name="txtIdent" required><br>
+		Votre mot de passe: <input type="password" name="txtMdp" required><br>
+		<input type="submit" name="btnValider">
+	</fieldset>
+	</center>
+	</form>
+</body>
+</html>
